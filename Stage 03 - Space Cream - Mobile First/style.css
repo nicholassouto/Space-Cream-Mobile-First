@@ -1,0 +1,135 @@
+* {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main p {
+  font-family: "Palanquin", sans-serif;
+  width: 30.5rem;
+  height: 7.5rem;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #23053a;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 1rem;
+  margin-bottom: 6.3rem;
+}
+
+body {
+  max-width: 38.4rem;
+  margin: 0 auto;
+}
+
+header {
+  background: #8e9aaf;
+  min-height: 27.9rem;
+  align-items: center;
+  width: 38.4rem;
+}
+
+header img {
+  margin: 3.2rem 8.3rem auto 7.3rem;
+}
+
+header h1 {
+  width: 38.4rem;
+  height: 4.9rem;
+  font-weight: 400;
+  background: #cbc0d3;
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+  color: #ffffff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  max-width: 32rem;
+  margin: 1.4rem 3.2rem 6rem;
+  display: grid;
+  background: #EFF1FF;
+  width: 32rem;
+}
+
+.sorvetes {
+  position: relative;
+}
+
+.sorvetes img {
+  width: 32rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  animation: tiposSorvete 700ms;
+}
+
+.sorvetes h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 11.2rem;
+  height: 3.5rem;
+  background: #feeafa;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+  color: #4a4e69;
+  padding-top: 0.1rem;
+  animation: etiquetas 700ms;
+}
+
+#sorvetePaleta {
+  margin-bottom: 3.2rem;
+}
+
+#sorveteShake {
+  margin-bottom: 3.6rem;
+}
+
+#sorveteMassas {
+  margin-bottom: 3.6rem;
+}
+
+#sorvetePicoles {
+  margin-bottom: 6rem;
+}
+
+@keyframes etiquetas {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tiposSorvete {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
